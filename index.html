@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trilha de CSS - DIO</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background-color: #121212;
+        color: #ffffff;
+        text-align: center;
+      }
+
+      .banner {
+        background: url("assets/images/banner.jpg") no-repeat center/cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .banner h1 {
+        font-size: 2.5rem;
+        margin: 20px 0;
+      }
+
+      .banner p {
+        font-size: 1.2rem;
+        max-width: 600px;
+      }
+
+      .banner button {
+        margin-top: 20px;
+        padding: 15px 30px;
+        background: #3369ff;
+        border: none;
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 5px;
+      }
+
+      .banner button:hover {
+        background: #2a3ce0;
+      }
+
+      #course-content {
+        padding: 30px 20px;
+      }
+
+      .modules-list {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+
+      .module {
+        background: #222;
+        padding: 15px;
+        border-radius: 8px;
+        min-width: 200px;
+      }
+
+      #transform-world {
+        background: #3369ff;
+        padding: 50px;
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+
+      #professional-challenges {
+        padding: 40px 20px;
+      }
+
+      footer {
+        background: #222;
+        padding: 30px;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="banner">
+      <div class="logo">
+        <img src="assets/images/logo.webp" alt="Logotipo Trilha de CSS DIO" />
+      </div>
+      <h1>Trilha de CSS da DIO</h1>
+      <p>Aprenda do zero como desenvolver sites profissionais com CSS!</p>
+      <button>Quero me inscrever</button>
+    </header>
+    <main>
+      <section id="course-content">
+        <h2>O que vou aprender?</h2>
+        <p>3 módulos incríveis para dominar CSS do básico ao avançado!</p>
+        <div class="modules-list">
+          <div class="module">Módulo 01: primeiros passos com CSS</div>
+          <div class="module">Módulo 02: trabalhando com layouts</div>
+          <div class="module">Módulo 03: refinando estilos</div>
+        </div>
+      </section>
+      <section id="transform-world">TRANSFORME O MUNDO COM A GENTE</section>
+      <section id="professional-challenges">
+        <h2>Encare novos desafios profissionais</h2>
+        <img
+          src="assets/images/professional-challenges.jpg"
+          alt="Homem lendo depoimentos em um tablet"
+        />
+        <p>
+          Junte-se ao ecossistema e conecte-se com as melhores oportunidades!
+        </p>
+      </section>
+    </main>
+    <footer>
+      <img src="assets/images/dio-logo.png" alt="Logotipo DIO" />
+      <p>Acesse <a href="https://dio.me">dio.me</a> e se cadastre agora</p>
+    </footer>
+  </body>
+</html>
